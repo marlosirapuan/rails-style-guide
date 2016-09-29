@@ -980,10 +980,10 @@ Use o [assets pipeline](http://guides.rubyonrails.org/asset_pipeline.html) para 
   config.action_mailer.default_url_options = { host: "#{local_ip}:3000" }
 
   # config/environments/production.rb
-  config.action_mailer.default_url_options = { host: ‘seu_site.com' }
+  config.action_mailer.default_url_options = { host: 'seu_site.com' }
 
   # na sua classe mailer
-  default_url_options[:host] = ‘seu_site.com'
+  default_url_options[:host] = 'seu_site.com'
   ```
 
 * <a name="url-not-path-in-email"></a>
@@ -994,11 +994,11 @@ Use o [assets pipeline](http://guides.rubyonrails.org/asset_pipeline.html) para 
   ```Ruby
   # ruim
   Você pode encontrar mais informações sobre esse curso 
-  <%= link_to ‘aqui’, curso_path(@curso) %>
+  <%= link_to 'aqui’, curso_path(@curso) %>
 
   # bom
   ocê pode encontrar mais informações sobre esse curso 
-  <%= link_to ‘aqui’, curso_url(@curso) %>
+  <%= link_to 'aqui’, curso_url(@curso) %>
   ```
 
 * <a name="email-addresses"></a>
